@@ -1,0 +1,42 @@
+
+  .loader-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Soft-Peach-color);
+  }
+  
+  .loader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--light-orange-color);
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    background-color: var(--peach-color);
+    animation-delay: 0.2s;
+  }
+  
+  .dot3 {
+    background-color: var(--light-pech-color);
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1);
+    }
+  }
+  

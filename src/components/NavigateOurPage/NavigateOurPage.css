@@ -1,0 +1,14 @@
+.navigate-card-container{
+    margin: 100px 8.595%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+@media (max-width: 1430px){
+    .navigate-card-container{
+        flex-direction: column;
+        margin:20px 0;
+    } 
+}
