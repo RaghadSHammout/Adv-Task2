@@ -103,7 +103,7 @@
     border-radius: 12px;
     border: 2px solid var(--black-color);
     text-decoration: none;
-    color: #111;
+    color: var(--black-color);
     font-size: 18px;
     margin-left: 10px;
   }

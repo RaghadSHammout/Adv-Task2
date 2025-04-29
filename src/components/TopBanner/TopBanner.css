@@ -1,9 +1,6 @@
 .top-banner {
     height: 58px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     overflow: hidden;
     border: 2px solid var(--black-color);
     background-color: var(--peach-color);
@@ -11,24 +8,115 @@
     width: 100%;
     margin-bottom: 14px;
 }
-.top-banner h2{
-    font-size: 20px;
+
+.banner-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.banner-text {
+    position: relative;
+    z-index: 2;
+}
+
+.top-banner h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
 .top-banner-right,
 .top-banner-left {
+    position: absolute;
     opacity: 0.5;
+    height: 100%;
+}
+
+.top-banner-left {
+    left: 0;
+}
+
+.top-banner-right {
+    right: 0;
 }
 
 .top-banner .big-ball {
     position: absolute;
-    left: 521px;
+    left: 30%;
     top: 0;
     opacity: 0.9;
+    z-index: 1;
 }
 
 .top-banner .small-ball {
     position: absolute;
     bottom: 0;
-    left: 1214px;
+    right: 30%;
     opacity: 0.9;
+    z-index: 1;
+}
+
+@media (max-width: 1440px) {
+    .top-banner .big-ball {
+        width: 60px;
+        left: 25%;
+    }
+    
+    .top-banner .small-ball {
+        width: 32px;
+        right: 25%;
+    }
+    
+    .top-banner h2 {
+        font-size: 18px;
+    }
+    
+    .top-banner h2 img {
+        width: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-banner {
+        height: 50px;
+    }
+    
+    .top-banner h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .top-banner h2 img {
+        width: 14px;
+    }
+    
+    .top-banner .big-ball {
+        width: 40px;
+        left: 10px;
+    }
+    
+    .top-banner .small-ball {
+        width: 25px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-banner h2 {
+        font-size: 14px;
+    }
+    
+    .top-banner .big-ball {
+        width: 40px;
+    }
+    
+    .top-banner .small-ball {
+        width: 20px;
+    }
 }
