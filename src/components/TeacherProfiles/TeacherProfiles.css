@@ -3,13 +3,13 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    margin: 100px auto;
+    margin: 100px 0;
     justify-content: center;
   }
   
   .teacher-card {
     flex: 1 1 750px; 
-    max-width: 650px;
+    max-width: 790px;
   }
   
   @media (max-width: 1100px) {

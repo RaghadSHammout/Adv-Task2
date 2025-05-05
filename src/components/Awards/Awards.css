@@ -1,5 +1,5 @@
 .awards-container{
-    margin: 100px auto;
+    margin: 100px 0;
 }
 
 .awards-wrapper{
@@ -104,6 +104,9 @@
     }
   }
   @media (max-width: 1439px) {
+    .awards-container{
+      margin: 10px auto;
+  }
     .awards-slide {
       min-width: 100%;
     }
