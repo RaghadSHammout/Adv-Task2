@@ -1,0 +1,141 @@
+.timeline {
+  background-color: var(--white-color);
+  border: 2px solid var(--black-color);
+  border-radius: 12px;
+  box-shadow: 8px 8px var(--black-color);
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  margin: 0 8%;
+  margin-bottom: 200px;
+  margin-top: 80px;
+
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 60px;
+
+}
+
+.timeline-line-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  width: 20px;
+  position: relative;
+}
+
+.timeline-dot-container {
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-dot-outer {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-dot-inner {
+  width: 10px;
+  height: 10px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: calc(100% + 60px);
+  background-color: var(--black-color);
+}
+
+.connector-line {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--black-color);
+}
+
+.timeline-content {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.timeline-year {
+  position: relative;
+  min-width: 180px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 12px;
+  box-shadow: 8px 8px var(--black-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  margin-right: 30px;
+  top: -35px;
+  right: 10px;
+}
+
+.year-text {
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.timeline-text {
+  flex: 1;
+  padding: -10px 0;
+}
+
+.timeline-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: var(--black-color);
+}
+
+.timeline-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--black-color);
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding: 50px 20px ;
+  }
+  .timeline-content {
+    flex-direction: column;
+  }
+
+  .timeline-year {
+    left: 10px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    min-width: auto;
+    width: 150px;
+  }
+  .timeline-year-img{
+    width: 50px;
+  }
+  .timeline-text {
+    padding-left: 10px;
+  }
+
+
+}

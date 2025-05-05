@@ -56,7 +56,8 @@ const TestimonialSlider = () => {
 
     return (
        <>
-       <TopSections text={'Their Happy Words 🤗'} title={'Our Testimonials'} subtitle={'Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.'} />
+       <TopSections text={'Their Happy Words 🤗'} title={'Our Testimonials'} subtitle={'Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.'}
+        className="center" />
         <div className="testimonials-section">
         
             <div className="testimonial-wrapper">

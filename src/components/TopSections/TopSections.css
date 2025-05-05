@@ -3,7 +3,6 @@
     border: 2px solid var(--black-color);
     background-color: var(--white-color);
     border-radius: 12px;
-    margin: 0 auto;
     width: max-content;
 }
 .title-sub-title-container{
@@ -22,6 +21,15 @@
     font-weight: 500;
 }
 
+.top-sections.center {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .top-sections.left {
+    margin: 0;
+    text-align: left;
+  }
 @media(max-width:1300px){
     .title-sub-title-container{
         width:100%;

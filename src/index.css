@@ -24,3 +24,11 @@ body {
   padding: 20px 30px;
   background-color: var(--Soft-Peach-color);
 }
+
+@media(max-width:900px){
+  body {
+    padding: 20px 10px;
+    background-color: var(--Soft-Peach-color);
+  }
+
+}

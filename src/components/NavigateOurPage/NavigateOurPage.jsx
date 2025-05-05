@@ -31,7 +31,8 @@ const navigateData = [
 const NavigateOurPage = () => {
     return (
         <>
-            <TopSections text={'Explore More'} title={'Navigate through our Pages'} subtitle={'Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school'} />
+            <TopSections text={'Explore More'} title={'Navigate through our Pages'} subtitle={'Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school'}
+             className="center" />
             <div className='navigate-card-container'>
                 {navigateData.map((item, index) => (
                     <NavigateCard

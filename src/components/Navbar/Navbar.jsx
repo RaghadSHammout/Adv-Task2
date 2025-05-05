@@ -16,7 +16,7 @@ const Navbar = ({ logo, links, toggle }) => {
           {links.map((link, index) => (
             <li key={index} className={link.label === 'Contact' ? 'highlighted' : ''}>
               <NavLink 
-                to={link.href} 
+                to={link.path} 
                 className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
               >
                 {link.label}

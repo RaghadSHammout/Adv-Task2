@@ -1,0 +1,192 @@
+.card {
+    position: relative;
+    padding: 80px 40px;
+    border: 2px solid var(--black-color);
+    border-radius: 12px;
+    background-color: var(--white-color);
+    box-shadow: 8px 8px var(--black-color);
+    flex: 0 0 calc(33.33% - 27px);
+    max-width: calc(33.33% - 27px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 12px 12px var(--black-color);
+}
+
+.img-container {
+    position: absolute;
+    left: 30px;
+    top: -40px;
+    border: 2px solid var(--black-color);
+    background-color: var(--peach-color);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .img-container img {
+    width: 32px;
+}
+
+.rectangle {
+    display: none;
+}
+
+/* Typography */
+.card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+/* ---------------------- Subject Card ---------------------- */
+.card.subject-card {
+    padding: 50px;
+    width: 100%;
+    min-height: 570px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--white-color);
+    position: relative;
+}
+
+.card.subject-card .img-container {
+    border: none;
+    background-color: transparent;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+
+.card.subject-card .card-img {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    z-index: 2;
+}
+
+.card.subject-card .rectangle {
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125px;
+    z-index: 1;
+}
+
+.card.subject-card .text-container {
+    position: absolute;
+    margin: 10px;
+    text-align: center;
+    z-index: 3;
+}
+
+/* ---------------------- M&V Card ---------------------- */
+.mv-card {
+    flex: 0 0 calc(47.33% - 27px);
+    max-width: calc(47.33% - 27px);
+    height: 450px;
+    overflow: hidden;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.mv-card .img-container {
+    position: static;
+    border: none;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 20px;
+
+}
+
+.mv-card .title-with-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.mv-card .card-img {
+    width: 80px;
+}
+
+
+
+.mv-card .text-container {
+    text-align: left;
+}
+
+.mv-card h3 {
+    font-size: 48px;
+}
+
+
+
+
+/* ---------------------- Media Queries ---------------------- */
+
+@media (max-width: 1439px) {
+    .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .subject-card {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .subject-card .card-img {
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card.card h3 {
+        font-size: 22px;
+    }
+
+    .card.card p {
+        font-size: 16px;
+    }
+
+    .card.subject-card .rectangle {
+        width: 93px;
+    }
+
+    .card.subject-card .card-img {
+        width: 298px;
+    }
+
+    .card.subject-card {
+
+        min-height: 470px;
+
+    }
+    .mv-card {
+      padding: 20px;
+    }
+}

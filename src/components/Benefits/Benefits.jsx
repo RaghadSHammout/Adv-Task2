@@ -1,7 +1,6 @@
 import './Benefits.css'
 import TopSections from '../TopSections/TopSections'
-import BenfitsCard from './BenfitsCard/BenfitsCard'
-
+import Card from '../Card/Card'
 
 const cardsData = [
     { cardIcon: '/images/icons/ico1.png', benfitsCardTitle: 'Holistic Learning Approach', benfitsCardParagraph: 'Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.' },
@@ -15,14 +14,14 @@ const cardsData = [
 const Benefits = () => {
     return (
         <div className='benefits'>
-            <TopSections text={'Children Deserve Bright Future'} title={'Our Benefits'} subtitle={'With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your childs future.'} />
+            <TopSections text={'Children Deserve Bright Future'} title={'Our Benefits'} subtitle={'With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your childs future.'}  className="center" />
             <div className="benefits-container">
             {cardsData.map((item, index) => (
-          <BenfitsCard
+          <Card
             key={index}
             cardIcon={item.cardIcon}
-            benfitsCardTitle={item.benfitsCardTitle}
-            benfitsCardParagraph={item.benfitsCardParagraph}
+            CardTitle={item.benfitsCardTitle}
+            CardParagraph={item.benfitsCardParagraph}
           />
         ))}
             </div>
